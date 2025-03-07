@@ -92,25 +92,26 @@ img {
     02. Nav
     ----------------------------*/
 nav {
-    background: var(--color-primary);
+    position: fixed;
     width: 100vw;
     height: 4.5rem;
     top: 0;
-    z-index: 10;
+    background: var(--color-primary);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 nav button {
     display: none;
 }
 .nav__container {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 .avatar {
-    width: 2.5rem;
     height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     overflow: hidden;
     border: 0.3rem solid var(--color-bg);
@@ -130,10 +131,11 @@ nav button {
 }
 .nav__profile ul {
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: 125%;
     right: 0;
-    flex-direction: column;
+    background: var(--color-gray-900);
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
     visibility: hidden;
     opacity: 0;
@@ -153,4 +155,64 @@ nav button {
     color: var(--color-bg);
     background: var(--color-red);
     
+}
+
+
+/*-------------------------------
+    03. Featured
+    ----------------------------*/
+
+.category__button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    border-radius: var(--card-border-radius-2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.category__button:hover {
+    color: var(--color-white);
+}
+
+/*-------------------------------
+    04. General Post
+    ----------------------------*/
+.post__thumbnail {
+    margin-bottom: 1.6rem;
+    border-radius: var(--card-border-radius-5) 0;
+    border: 1rem solid var(--color-gray-900);
+    overflow: hidden;
+}
+.post:hover .post__thumbnail img {
+    filter: saturate(0);
+    transition: filter 500ms ease;
+}
+.post__author {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+.post__author-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--card-border-radius-3);
+    overflow: hidden;
+}
+
+/*-------------------------------
+    05. Featured
+    ----------------------------*/
+.featured {
+    margin-top: 8rem;
+}
+
+.featured__container {
+    display: grid;
+    grid-template-columns: 1f 1fr;
+    gap: 4rem;
+}
+.featured .post__thumbnail {
+    height: fit-content;
 }
