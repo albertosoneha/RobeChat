@@ -3,60 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RobéBlog</title>
+    <title>ChatApp em tempo real</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.2.0/css/line.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html" class="nav__logo">RobéBlog</a>
-            <ul class="nav__items">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="signin.html">Entrar</a></li>
-                <li class="nav__profile">
-                    <div class="avatar">
-                        <img src="/images/avatar1.jpg">
+    <div class="wrapper">
+        <section class="form signup">
+            <header>Chat em tempo real</header>
+            <form action="#">
+                <div class="error-txt">Isto é uma mensagem de erro!</div>
+                <div class="name-details">
+                    <div class="field input">
+                        <label>Primeiro Nome</label>
+                        <input type="text" placeholder="Primero Nome">
                     </div>
-                    <ul>
-                        <li><a href="dashboard.html">Painel</a></li>
-                        <li><a href="logout.html">Sair</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="open__nav-btn"><i class="uil uil-bars"></i></button>
-            <button class="close__nav-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
-    <!--Fim do nav-->
-
-    <section class="featured">
-        <div class="container featured__container">
-            <div class="post__thumbnail">
-                <img src="images/blog1.jpg">
-            </div>
-            <div class="post__info">
-                <a href="#" class="category__button">Vida Selvagem</a>
-                <h2 class="post__title"><a href="post.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus!</h2>
-                <p class="post__body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, officiis numquam fugit velit unde optio molestias dolore quia dolorum autem reiciendis repellat nobis facilis adipisci consectetur eaque mollitia laborum quod.
-                </p>
-                <div class="post__author">
-                    <div class="post__author-avatar">
-                        <img src="images/avatar2.jpg">
-                    </div>
-                    <div class="post__author-info">
-                        <h5>Por Jhon Doe</h5>
-                        <small>June 10, 2022 - 07:23</small>
+                    <div class="field input">
+                        <label>Último Nome</label>
+                        <input type="text" placeholder="Último Nome">
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-     <!--Fim do Featured-->
-    
+                <div class="field input">
+                    <label>Email</label>
+                    <input type="email" placeholder="Insira o seu email">
+                </div>
+                <div class="field input">
+                    <label>Senha</label>
+                    <input type="password" placeholder="Insira a sua nova senha">
+                </div>
+                <div class="field image">
+                    <label>Selecione uma imagem</label>
+                    <input type="file">
+                </div>
+                <div class="field button">
+                    <input type="submit" value="Continuar para o Chat">
+                </div>
+            </form>
+            <div class="link">Já se inscreveu? <a href="#">Entrar</a></div>
+        </section>
+    </div>
 </body>
 </html>
