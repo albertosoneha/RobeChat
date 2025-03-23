@@ -1,6 +1,6 @@
 # 🌟 **RobéChat**  
 
-Aplicativo web de chat em tempo real
+Aplicativo web de chat em tempo real, projetado para oferecer uma experiência de comunicação rápida, segura e intuitiva.
 
 ---
 
@@ -10,7 +10,7 @@ Aplicativo web de chat em tempo real
   Envie e receba mensagens instantaneamente com outros usuários conectados.
 
 - 🔐 **Autenticação de Usuários**  
-  Registre-se e faça login para acessar o chat.
+  Registre-se e faça login para acessar o chat com segurança.
 
 - 💬 **Salas de Chat**  
   Crie e participe de diferentes salas de chat para discussões específicas.
@@ -19,7 +19,7 @@ Aplicativo web de chat em tempo real
   Receba notificações de novas mensagens e atividades importantes.
 
 - 🎨 **Interface Amigável**  
-  Interface de usuário intuitiva e fácil de usar.
+  Interface de usuário intuitiva e fácil de usar, projetada para todos os dispositivos.
 
 - 😀 **Suporte a Emojis**  
   Envie emojis para expressar suas emoções nas conversas.
@@ -32,4 +32,9 @@ Aplicativo web de chat em tempo real
 
 ---
 
-💡 **Nota:** Este projeto está em constante evolução. Contribuições são bem-vindas!
+## 🛠️ **Como Executar o Projeto**
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/robechat.git
