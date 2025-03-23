@@ -13,7 +13,7 @@
     <div class="wrapper">
         <section class="form signup">
             <header>Chat em tempo real</header>
-            <form action="#">
+            <form action="#" enctype="multipart/form-data">
                 <div class="error-txt">Isto é uma mensagem de erro!</div>
                 <div class="name-details">
                     <div class="field input">
