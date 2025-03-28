@@ -30,9 +30,18 @@
                         if(move_uploaded_file($tmp_name, "imgs/".$new_img_name)){ // Se a imagem for movida para o diretório
                             $status = 'Ativo agora'; // Status do usuário)
                             $random_id = rand(time(), 10000000); // ID do usuário
-                            
+                            $sql2 = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status) VALUES ({$random_id}, '{$fname}', '{$lname}', '{$email}', '{$password}', '{$new_img_name}', '{$status}')"); // Insere os dados do usuário no banco de dados
+                            if($sql2){
+                               $sql3 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'"); // Seleciona os dados do usuário
+                                if(mysqli_num_rows($sql3) > 0) { // Se os dados do usuário existirem
+                                   $row = mysqli_fetch_assoc($sql3); // Pega os dados do usuário
+                                   $_SESSION['unique_id'] = $row['unique_id']; // Usando esta sessão que usamos o unique_id do usuário em outros arquivos PHP
+                                   echo "sucesso"; // Exibe a mensagem
+                                }
+                            }else {
+                                echo"Alguma coisa deu errado!";
+                            }
                         }
-                       
                        
                     }else {
                         echo "Por favor, selecione uma imagem - PNG, JPEG, JPG!"; // Se não, exibe a mensagem
