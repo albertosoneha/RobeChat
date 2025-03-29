@@ -14,7 +14,7 @@
         <section class="form signup">
             <header>Chat em tempo real</header>
             <form action="#" enctype="multipart/form-data">
-                <div class="error-text"></div>
+                <div class="error-txt"></div>
                 <div class="name-details">
                     <div class="field input">
                         <label>Primeiro Nome</label>

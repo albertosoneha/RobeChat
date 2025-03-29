@@ -42,7 +42,7 @@ body {
     margin: 20px 0;
 }
 
-.form form .error-text {
+.form form .error-txt {
     display: none;
     color: #721c24;
     background: #f8d7da;
